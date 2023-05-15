@@ -1,12 +1,91 @@
 // small screens
+@include media-sm {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 0.5rem;
+            }
+
+            &__link {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .home {
+        &__name, &__name--last {
+            font-size: 1.8rem;
+        }
+        .tag-line {
+            font-size: 1.3rem;
+            margin: 0 1.3em;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .about {
+        &__bio {
+            font-size: 1.25rem;
+        }
+        .text-secondary {
+            font-size: 1.2rem;
+        }
+        .jobs__job {
+            width: 68vw;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        h5 {
+            font-size: 0.9rem;
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-weight: 3rem;
+        }
+    }
+
+    .contact {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+// medium screens
 @include media-md {
     .menu-btn {
         visibility: hidden;
     }
-    
     .nav {
         visibility: visible;
-
+        
         .menu-nav {
             display: block;
             transform: translateY(0);

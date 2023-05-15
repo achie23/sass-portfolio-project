@@ -10,7 +10,7 @@
                 rgba($primary-color, 0.9),
                 rgba($primary-color, 0.3)
             ),
-            url('../img/model-2.jpg')center top;
+            url('../img/background.jpg')center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -27,7 +27,7 @@
         text-align: center;
 
         .text-secondary {
-            padding-bottom: 1rem;
+            padding-bottom: 1rem;   
         }
     }
 
@@ -38,6 +38,11 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
 
+        .line {
+            text-decoration: underline;
+            text-decoration-color: #ffffff;
+        }
+
         &__job {
             background: lighten($primary-color, 10%);
             padding: 0.5rem;
@@ -47,10 +52,25 @@
                 margin: 0.5rem 0;
             }
 
-            h6 {
+            h5 {
                 margin: 0.3rem 0;
             }
+            p {
+                margin: 0.2rem 0;
+            }
         }
+    }
+
+    .education {
+        @extend .jobs;
+
+        &__edu {
+            @extend .jobs__job;
+        }
+    }
+
+    .skills {
+        @extend .jobs;
     }
 
     .social-icons {
@@ -59,7 +79,6 @@
     }
 
     footer {
-        //original code doesn't include position
         position: relative;
         // transform: 
         // rotate(90deg)

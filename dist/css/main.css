@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-2.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
 }
 .home__name {
@@ -144,7 +144,7 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-2.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -161,23 +161,30 @@
 .about__bio .text-secondary {
   padding-bottom: 1rem;
 }
-.about .jobs {
+.about .jobs, .about .skills, .about .education {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.about .jobs__job {
+.about .jobs .line, .about .skills .line, .about .education .line {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+.about .jobs__job, .about .education__edu {
   background: #414141;
   padding: 0.5rem;
   border-bottom: 5px solid #ff5216;
 }
-.about .jobs__job h2, .about .jobs__job h3 {
+.about .jobs__job h2, .about .education__edu h2, .about .jobs__job h3, .about .education__edu h3 {
   margin: 0.5rem 0;
 }
-.about .jobs__job h6 {
+.about .jobs__job h5, .about .education__edu h5 {
   margin: 0.3rem 0;
+}
+.about .jobs__job p, .about .education__edu p {
+  margin: 0.2rem 0;
 }
 .about .social-icons {
   display: flex;
@@ -193,7 +200,7 @@
 .projects__bio-image {
   height: 40vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-2.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -217,8 +224,13 @@
   overflow: hidden;
   cursor: pointer;
 }
+.projects__item .project_title {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
 .projects__item img {
   width: 100%;
+  height: 100%;
 }
 .projects__item::after {
   content: "";
@@ -272,7 +284,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-2.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
 }
 .contact h2 {
@@ -291,11 +303,74 @@
   transition: all 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 0.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.1rem;
+  }
+  .home__name, .home__name--last {
+    font-size: 1.8rem;
+  }
+  .home .tag-line {
+    font-size: 1.3rem;
+    margin: 0 1.3em;
+  }
+  .home .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__bio {
+    font-size: 1.25rem;
+  }
+  .about .text-secondary {
+    font-size: 1.2rem;
+  }
+  .about .jobs__job, .about .education__edu {
+    width: 68vw;
+  }
+  .about h3 {
+    font-size: 1rem;
+  }
+  .about h5 {
+    font-size: 0.9rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-weight: 3rem;
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
@@ -313,11 +388,9 @@
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
-
   .about__bio {
     font-size: 1.5rem;
   }
-
   .projects__bio-image {
     height: 40vh;
   }
@@ -327,7 +400,6 @@
   .projects .text-secondary {
     font-weight: 3rem;
   }
-
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -336,7 +408,6 @@
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .contact__list {
     grid-template-columns: repeat(3, 1fr);
   }
