@@ -1,7 +1,7 @@
 .contact {
     height: 100%;
     padding-top: 40vh;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,21 +14,61 @@
         url('../img/background.jpg') center top;
     background-size: cover;
 
-    h2 {
+    &_title {
         font-size: 3rem;
+        margin-top: -13rem;
         margin-bottom: 2rem;
+
+        span {
+            color: $secondary-color;
+        }
     }
 
-    &__list {
+    // &__list {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     grid-gap: 2rem;
+    //     font-size: 1.5rem;
+    // }
+
+    &_form {
+        width: 35%;
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         font-size: 1.5rem;
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            label {
+                margin-bottom: 0.5rem;
+            }
+            input {
+                height: 25px;
+            }
+            textarea {
+                font-size: 16px;
+            }
+        }
+        
+        #btn {
+            width: 120px;
+            height: 40px;
+            background: $secondary-color;
+            border-radius: 100px;
+            color: #ffffff;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
     }
 
     .social-icons {
-        position: initial;
-        margin-top: 2rem;
+        position: fixed;
+        // margin-top: 2rem;
         @include transition-ease;
     }
 }

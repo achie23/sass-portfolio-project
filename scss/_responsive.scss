@@ -53,6 +53,12 @@
         h5 {
             font-size: 0.9rem;
         }
+
+        .skills-section {
+            .skills_list {
+                padding: 0 5%;
+            }
+        }
     }
 
     .projects {
@@ -60,7 +66,7 @@
             height: 40vh;
         }
         &__items {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
         .text-secondary {
             font-weight: 3rem;

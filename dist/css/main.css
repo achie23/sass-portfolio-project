@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
+  background: linear-gradient(to right, rgba(18, 23, 43, 0.9), rgba(18, 23, 43, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
 }
 .home__name {
@@ -20,7 +20,7 @@
   border-bottom: 2px solid #fff;
 }
 .home__name--last {
-  color: #ff652f;
+  color: #ff0000;
   font-weight: 700;
 }
 
@@ -91,7 +91,7 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #272727;
+  background: #12172b;
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
@@ -108,7 +108,7 @@
   transform: translateX(0);
 }
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #ff0000;
 }
 .nav .menu-nav__link {
   display: inline-block;
@@ -119,7 +119,7 @@
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: #ff0000;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -144,7 +144,7 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
+  background: linear-gradient(to right, rgba(18, 23, 43, 0.9), rgba(18, 23, 43, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -160,22 +160,29 @@
 }
 .about__bio .text-secondary {
   padding-bottom: 1rem;
+  color: #ffffff;
 }
-.about .jobs, .about .skills, .about .education {
+.about__bio .text-secondary span {
+  color: #ff0000;
+}
+.about__bio p {
+  font-size: 19px;
+}
+.about .jobs, .about .skills-section, .about .education {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
-.about .jobs .line, .about .skills .line, .about .education .line {
+.about .jobs .line, .about .skills-section .line, .about .education .line {
   text-decoration: underline;
   text-decoration-color: #ffffff;
 }
 .about .jobs__job, .about .education__edu {
-  background: #414141;
+  background: #212a4f;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff5216;
+  border-bottom: 5px solid #e60000;
 }
 .about .jobs__job h2, .about .education__edu h2, .about .jobs__job h3, .about .education__edu h3 {
   margin: 0.5rem 0;
@@ -185,6 +192,162 @@
 }
 .about .jobs__job p, .about .education__edu p {
   margin: 0.2rem 0;
+}
+.about .skills-section .skills_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  padding: 0 auto;
+  margin-bottom: 2rem;
+}
+.about .skills-section .skill {
+  position: relative;
+  margin-bottom: 5px;
+}
+.about .skills-section .skill_title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.about .skills-section .skill_bar {
+  width: 100%;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  border-radius: 100px;
+  z-index: -1;
+}
+.about .skills-section .skill_fill {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #0c35da;
+  height: 15px;
+  padding-right: 30px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.about .skills-section .skill_percent {
+  font-size: 15px;
+}
+.about .skills-section .skill .html {
+  animation: html 2s;
+  width: 95%;
+}
+.about .skills-section .skill .css {
+  animation: css 2s;
+  width: 95%;
+}
+.about .skills-section .skill .js {
+  animation: js 2s;
+  width: 90%;
+}
+.about .skills-section .skill .ts {
+  animation: js 2s;
+  width: 90%;
+}
+.about .skills-section .skill .python {
+  animation: js 2s;
+  width: 88%;
+}
+.about .skills-section .skill .django {
+  animation: js 2s;
+  width: 85%;
+}
+.about .skills-section .skill .angular {
+  animation: js 2s;
+  width: 88%;
+}
+.about .skills-section .skill .react {
+  animation: js 2s;
+  width: 85%;
+}
+.about .skills-section .skill .node {
+  animation: js 2s;
+  width: 85%;
+}
+.about .skills-section .skill .sass {
+  animation: js 2s;
+  width: 90%;
+}
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+@keyframes css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes ts {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes python {
+  from {
+    width: 0;
+  }
+  to {
+    width: 88%;
+  }
+}
+@keyframes django {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes angular {
+  from {
+    width: 0;
+  }
+  to {
+    width: 88%;
+  }
+}
+@keyframes react {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes node {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes sass {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
 }
 .about .social-icons {
   display: flex;
@@ -200,7 +363,7 @@
 .projects__bio-image {
   height: 40vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
+  background: linear-gradient(to right, rgba(18, 23, 43, 0.9), rgba(18, 23, 43, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -210,19 +373,26 @@
 .projects__bio-image .text-secondary {
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: #ffffff;
+}
+.projects__bio-image .text-secondary span {
+  color: #ff0000;
 }
 .projects__items {
   width: 60vw;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 2rem auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  justify-content: center;
 }
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff5216;
+  border-bottom: 5px solid #e60000;
   overflow: hidden;
   cursor: pointer;
+  width: 300px;
+  height: 200px;
 }
 .projects__item .project_title {
   margin-bottom: 0.5rem;
@@ -239,7 +409,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ff652f;
+  background: #ff0000;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -280,26 +450,53 @@
 .contact {
   height: 100%;
   padding-top: 40vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background.jpg") center top;
+  background: linear-gradient(to right, rgba(18, 23, 43, 0.9), rgba(18, 23, 43, 0.3)), url("../img/background.jpg") center top;
   background-size: cover;
 }
-.contact h2 {
+.contact_title {
   font-size: 3rem;
+  margin-top: -13rem;
   margin-bottom: 2rem;
 }
-.contact__list {
+.contact_title span {
+  color: #ff0000;
+}
+.contact_form {
+  width: 35%;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   font-size: 1.5rem;
 }
+.contact_form_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contact_form_item label {
+  margin-bottom: 0.5rem;
+}
+.contact_form_item input {
+  height: 25px;
+}
+.contact_form_item textarea {
+  font-size: 16px;
+}
+.contact_form #btn {
+  width: 120px;
+  height: 40px;
+  background: #ff0000;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
 .contact .social-icons {
-  position: initial;
-  margin-top: 2rem;
+  position: fixed;
   transition: all 0.5s ease-in-out;
 }
 
@@ -350,11 +547,14 @@
   .about h5 {
     font-size: 0.9rem;
   }
+  .about .skills-section .skills_list {
+    padding: 0 5%;
+  }
   .projects__bio-image {
     height: 40vh;
   }
   .projects__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .projects .text-secondary {
     font-weight: 3rem;
@@ -418,7 +618,7 @@
   }
 }
 body {
-  background: #272727;
+  background: #12172b;
   color: #fff;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -435,7 +635,7 @@ a {
 }
 
 .text-secondary {
-  color: #ff5216;
+  color: #e60000;
 }
 
 header {
@@ -459,7 +659,7 @@ main .social-icons a {
   transition: all 0.5s ease-in-out;
 }
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #ff0000;
 }
 
 footer {

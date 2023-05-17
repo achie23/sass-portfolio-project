@@ -31,8 +31,8 @@
     </header>
     <main>
         <section class="contact">
-            <h2>Contact Me</h2>
-            <div class="contact__list">
+            <h2 class="contact_title">Contact <span>Me</span></h2>
+            <!-- <div class="contact__list">
                 <div class="contact__email">
                     <i class="fas fa-envelope"></i> Email
                     <div class="text-secondary">abrian130@gmail.com</div>
@@ -45,10 +45,31 @@
                     <i class="fas fa-envelope"></i> Address
                     <div class="text-secondary">Biolgy Dept. KNUST, Kumasi-Ghana</div>
                 </div>
+            </div> -->
+
+            <div class="contact_form">
+                <form method="post">
+                    <div class="contact_form_item">
+                        <label>Full Name:</label>
+                        <input type="text" id="name" placeholder="Enter Your Name" />
+                    </div>
+                    <div class="contact_form_item">
+                        <label>Email:</label>
+                        <input type="email" id="email" placeholder="example@gmail.com" />
+                    </div>
+                    <div class="contact_form_item">
+                        <label>Subject:</label>
+                        <input type="text" id="subject" placeholder="Enter Subject" />
+                    </div>
+                    <div class="contact_form_item">
+                        <label>Message:</label>
+                        <textarea id="message" cols="50" rows="12" placeholder="Enter Message"></textarea>
+                    </div>
+                    <button id="btn">Send Message</button>
+                </form>
             </div>
             
             <div class="social-icons">
-                <!-- use font awesome for icons -->
                 <a href="https://github.com/achie23" target="_blank">
                     <i class="fab fa-github fa-2x"></i>
                 </a>
@@ -66,8 +87,9 @@
         </section>
     </main>
 
-    <!-- Brian's font awesome kit -->
     <script src="https://kit.fontawesome.com/d0c096c338.js" crossorigin="anonymous"></script>
     <script src="dist/js/main.js"></script>
+    <script src="dist/js/email.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

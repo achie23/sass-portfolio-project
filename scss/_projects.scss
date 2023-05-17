@@ -20,15 +20,21 @@
         .text-secondary {
             font-size: 2rem;
             margin-bottom: 2rem;
+            color: #ffffff;
+
+            span {
+                color: $secondary-color;
+            }
         }
     }
 
     &__items {
         width: 60vw;
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto 2rem auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
+        justify-content: center;
     }
 
     &__item {
@@ -36,6 +42,8 @@
         border-bottom: 5px solid darken($secondary-color, 5%);
         overflow: hidden;
         cursor: pointer;
+        width: 300px;
+        height: 200px;
 
         .project_title {
             margin-bottom: 0.5rem;
