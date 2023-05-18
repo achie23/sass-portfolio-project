@@ -26,38 +26,38 @@
 
 .menu-btn {
   position: absolute;
-  z-index: 1;
-  right: 1rem;
-  top: 1rem;
   height: 20px;
   width: 28px;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger {
   position: absolute;
-  right: 0;
-  top: 0.5rem;
   width: 28px;
   height: 3px;
+  right: 0;
+  top: 0.5rem;
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
   content: "";
   position: absolute;
-  top: -8px;
   width: 28px;
   height: 3px;
+  top: -8px;
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::after {
   content: "";
   position: absolute;
-  top: 8px;
   width: 20px;
   height: 3px;
+  top: 8px;
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
@@ -75,9 +75,9 @@
 
 .nav {
   position: fixed;
+  width: 100vw;
   top: 0;
   left: 0;
-  width: 100vw;
   opacity: 0.98;
   visibility: hidden;
 }
@@ -160,7 +160,7 @@
 }
 .about__bio .text-secondary {
   padding-bottom: 1rem;
-  color: #ffffff;
+  color: #fff;
 }
 .about__bio .text-secondary span {
   color: #ff0000;
@@ -177,7 +177,7 @@
 }
 .about .jobs .line, .about .skills-section .line, .about .education .line {
   text-decoration: underline;
-  text-decoration-color: #ffffff;
+  text-decoration-color: #fff;
 }
 .about .jobs__job, .about .education__edu {
   background: #212a4f;
@@ -458,7 +458,7 @@
 }
 .contact_title {
   font-size: 3rem;
-  margin-top: -13rem;
+  margin-top: -10rem;
   margin-bottom: 2rem;
 }
 .contact_title span {
@@ -479,19 +479,20 @@
 }
 .contact_form_item label {
   margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 .contact_form_item input {
   height: 25px;
 }
 .contact_form_item textarea {
-  font-size: 16px;
+  font-size: 14px;
 }
 .contact_form #btn {
   width: 120px;
   height: 40px;
   background: #ff0000;
   border-radius: 100px;
-  color: #ffffff;
+  color: #fff;
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -502,10 +503,10 @@
 
 @media screen and (max-width: 768px) {
   .menu-btn {
-    visibility: hidden;
+    visibility: visible;
   }
   .nav {
-    visibility: visible;
+    visibility: hidden;
   }
   .nav .menu-nav {
     display: block;

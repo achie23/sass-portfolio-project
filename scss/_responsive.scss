@@ -1,10 +1,10 @@
 // small screens
 @include media-sm {
     .menu-btn {
-        visibility: hidden;
+        visibility: visible;
     }
     .nav {
-        visibility: visible;
+        visibility: hidden;
         .menu-nav {
             display: block;
             transform: translateY(0);

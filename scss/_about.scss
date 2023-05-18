@@ -28,7 +28,7 @@
 
         .text-secondary {
             padding-bottom: 1rem;
-            color: #ffffff;
+            color: $white;
             
             span {
                 color: $secondary-color;
@@ -48,7 +48,7 @@
 
         .line {
             text-decoration: underline;
-            text-decoration-color: #ffffff;
+            text-decoration-color: $white;
         }
 
         &__job {

@@ -1,29 +1,29 @@
 .menu-btn {
     position: absolute;
-    z-index: 1;
-    right: 1rem;
-    top: 1rem;
     height: 20px;
     width: 28px;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
     cursor: pointer;
     @include transition-ease;
 
     &__burger {
         position: absolute;
-        right: 0;
-        top: 0.5rem;
         width: 28px;
         height: 3px;
+        right: 0;
+        top: 0.5rem;
         background: set-text-color($primary-color);
         @include transition-ease;
 
-        // use pseudoclass to create the handburger line
+        // use pseudoclass to create the hamburger line
         &::before {
             content: '';
             position: absolute;
-            top: -8px;
             width: 28px;
             height: 3px;
+            top: -8px;
             background: set-text-color($primary-color);
             @include transition-ease;
         }
@@ -31,9 +31,9 @@
         &::after {
             content: '';
             position: absolute;
-            top: 8px;
             width: 20px;
             height: 3px;
+            top: 8px;
             background: set-text-color($primary-color);
             @include transition-ease;
         }
@@ -57,9 +57,9 @@
 
 .nav {
     position: fixed;
+    width: 100vw;
     top: 0;
     left: 0;
-    width: 100vw;
     opacity: 0.98;
     visibility: hidden;
 
@@ -97,7 +97,7 @@
             }
         }
 
-        &__link{
+        &__link {
             display: inline-block;
             font-size: 2rem;
             text-transform: uppercase;
