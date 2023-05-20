@@ -6,16 +6,12 @@
     .nav {
         visibility: hidden;
         .menu-nav {
-            display: block;
+            display: flex;
+            justify-content: center;
             transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-
-            &__item {
-                display: inline;
-                padding-right: 0.5rem;
-            }
+            height: 100vh;
+            width: 65vw;
+            background: $primary-color;
 
             &__link {
                 font-size: 1.1rem;
@@ -24,40 +20,57 @@
     }
 
     .home {
+        &__container {
+            margin-top: -3rem;
+        }
+
         &__name, &__name--last {
             font-size: 1.8rem;
         }
         .tag-line {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin: 0 1.3em;
         }
         .social-icons {
+            position: fixed;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            margin-bottom: 3rem;
         }
     }
 
     .about {
         &__bio {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
         }
         .text-secondary {
             font-size: 1.2rem;
         }
-        .jobs__job {
-            width: 68vw;
+        
+        .jobs {
+            &__job {
+                width: 70vw;
+                height: auto;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            h5 {
+                font-size: 0.9rem;
+            }
         }
-        h3 {
-            font-size: 1rem;
-        }
-        h5 {
-            font-size: 0.9rem;
-        }
-
+        
         .skills-section {
             .skills_list {
                 padding: 0 5%;
             }
+        }
+        .social-icons {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 2rem 0 0.5rem 0;
         }
     }
 
@@ -77,10 +90,10 @@
         &__list {
             grid-template-columns: repeat(2, 1fr);
         }
-        .social-icons {
-            display: flex;
-            flex-direction: row;
-        }
+        // .social-icons {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
     }
 }
 

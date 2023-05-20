@@ -46,9 +46,13 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
 
+        h1 {
+            color: $white;
+        }
+
         .line {
             text-decoration: underline;
-            text-decoration-color: $white;
+            text-decoration-color: $secondary-color;
         }
 
         &__job {
