@@ -208,12 +208,12 @@
   margin-bottom: 5px;
 }
 .about .skills-section .skill_title {
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 5px;
 }
 .about .skills-section .skill_bar {
   width: 100%;
-  height: 15px;
+  height: 14px;
   background: rgba(255, 255, 255, 0.6);
   position: absolute;
   border-radius: 100px;
@@ -224,52 +224,52 @@
   justify-content: flex-end;
   align-items: center;
   background: #0c35da;
-  height: 15px;
+  height: 14px;
   padding-right: 30px;
   overflow: hidden;
   border-radius: 100px;
 }
 .about .skills-section .skill_percent {
-  font-size: 15px;
+  font-size: 13px;
 }
 .about .skills-section .skill .html {
   animation: html 2s;
-  width: 95%;
+  width: 99%;
 }
 .about .skills-section .skill .css {
   animation: css 2s;
   width: 95%;
 }
-.about .skills-section .skill .js {
-  animation: js 2s;
+.about .skills-section .skill .js_ts {
+  animation: js_ts 2s;
   width: 90%;
 }
-.about .skills-section .skill .ts {
-  animation: js 2s;
-  width: 90%;
-}
-.about .skills-section .skill .python {
-  animation: js 2s;
+.about .skills-section .skill .python_django {
+  animation: python_django 2s;
   width: 88%;
 }
-.about .skills-section .skill .django {
-  animation: js 2s;
-  width: 85%;
-}
 .about .skills-section .skill .angular {
-  animation: js 2s;
+  animation: angular 2s;
   width: 88%;
 }
 .about .skills-section .skill .react {
-  animation: js 2s;
-  width: 85%;
+  animation: react 2s;
+  width: 89%;
 }
 .about .skills-section .skill .node {
-  animation: js 2s;
+  animation: node 2s;
+  width: 87%;
+}
+.about .skills-section .skill .postgres_mysql {
+  animation: postgres_mysql 2s;
   width: 85%;
 }
-.about .skills-section .skill .sass {
-  animation: js 2s;
+.about .skills-section .skill .sass_bootstrap {
+  animation: sass_bootstrap 2s;
+  width: 92%;
+}
+.about .skills-section .skill .git_github {
+  animation: git_github 2s;
   width: 90%;
 }
 @keyframes html {
@@ -277,7 +277,7 @@
     width: 0;
   }
   to {
-    width: 95%;
+    width: 99%;
   }
 }
 @keyframes css {
@@ -288,7 +288,7 @@
     width: 95%;
   }
 }
-@keyframes js {
+@keyframes js_ts {
   from {
     width: 0;
   }
@@ -296,28 +296,12 @@
     width: 90%;
   }
 }
-@keyframes ts {
-  from {
-    width: 0;
-  }
-  to {
-    width: 90%;
-  }
-}
-@keyframes python {
+@keyframes python_django {
   from {
     width: 0;
   }
   to {
     width: 88%;
-  }
-}
-@keyframes django {
-  from {
-    width: 0;
-  }
-  to {
-    width: 85%;
   }
 }
 @keyframes angular {
@@ -333,7 +317,7 @@
     width: 0;
   }
   to {
-    width: 85%;
+    width: 89%;
   }
 }
 @keyframes node {
@@ -341,10 +325,26 @@
     width: 0;
   }
   to {
+    width: 87%;
+  }
+}
+@keyframes postgres_mysql {
+  from {
+    width: 0;
+  }
+  to {
     width: 85%;
   }
 }
-@keyframes sass {
+@keyframes sass_bootstrap {
+  from {
+    width: 0;
+  }
+  to {
+    width: 92%;
+  }
+}
+@keyframes git_github {
   from {
     width: 0;
   }

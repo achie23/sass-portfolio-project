@@ -95,13 +95,13 @@
             margin-bottom: 5px;
             
             &_title {
-                font-size: 18px;
+                font-size: 15px;
                 margin-bottom: 5px;
             }
 
             &_bar {
                 width: 100%;
-                height: 15px;
+                height: 14px;
                 background: #ffffff99;
                 position: absolute;
                 border-radius: 100px;
@@ -113,54 +113,54 @@
                 justify-content: flex-end;
                 align-items: center;
                 background: $fill-color;
-                height: 15px;
+                height: 14px;
                 padding-right: 30px;
                 overflow: hidden;
                 border-radius: 100px;
             }
 
             &_percent {
-                font-size: 15px;
+                font-size: 13px;
             }
 
             .html {
                 animation: html 2s;
-                width: 95%;
+                width: 99%;
             }
             .css {
                 animation: css 2s;
                 width: 95%;
             }
-            .js {
-                animation: js 2s;
+            .js_ts {
+                animation: js_ts 2s;
                 width: 90%;
             }
-            .ts {
-                animation: js 2s;
-                width: 90%;
-            }
-            .python {
-                animation: js 2s;
+            .python_django {
+                animation: python_django 2s;
                 width: 88%;
             }
-            .django {
-                animation: js 2s;
-                width: 85%;
-            }
             .angular {
-                animation: js 2s;
+                animation: angular 2s;
                 width: 88%;
             }
             .react {
-                animation: js 2s;
-                width: 85%;
+                animation: react 2s;
+                width: 89%;
             }
             .node {
-                animation: js 2s;
+                animation: node 2s;
+                width: 87%;
+            }
+            .postgres_mysql {
+                animation: postgres_mysql 2s;
                 width: 85%;
             }
-            .sass {
-                animation: js 2s;
+            .sass_bootstrap {
+                animation: sass_bootstrap 2s;
+                width: 92%;
+            }
+            .git_github {
+                animation: git_github 2s;
                 width: 90%;
             }
             @keyframes html {
@@ -168,7 +168,7 @@
                     width: 0;
                 }
                 to {
-                    width: 95%;
+                    width: 99%;
                 }
             }
             @keyframes css {
@@ -179,7 +179,7 @@
                     width: 95%;
                 }
             }
-            @keyframes js {
+            @keyframes js_ts {
                 from {
                     width: 0;
                 }
@@ -187,28 +187,12 @@
                     width: 90%;
                 }
             }
-            @keyframes ts {
-                from {
-                    width: 0;
-                }
-                to {
-                    width: 90%;
-                }
-            }
-            @keyframes python {
+            @keyframes python_django {
                 from {
                     width: 0;
                 }
                 to {
                     width: 88%;
-                }
-            }
-            @keyframes django {
-                from {
-                    width: 0;
-                }
-                to {
-                    width: 85%;
                 }
             }
             @keyframes angular {
@@ -224,7 +208,7 @@
                     width: 0;
                 }
                 to {
-                    width: 85%;
+                    width: 89%;
                 }
             }
             @keyframes node {
@@ -232,10 +216,26 @@
                     width: 0;
                 }
                 to {
+                    width: 87%;
+                }
+            }
+            @keyframes postgres_mysql {
+                from {
+                    width: 0;
+                }
+                to {
                     width: 85%;
                 }
             }
-            @keyframes sass {
+            @keyframes sass_bootstrap {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 92%;
+                }
+            }
+            @keyframes git_github {
                 from {
                     width: 0;
                 }
@@ -253,8 +253,5 @@
 
     footer {
         position: relative;
-        // transform: 
-        // rotate(90deg)
-        // translate(-3rem, -5rem); 
     }
 }
